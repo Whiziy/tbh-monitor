@@ -4,9 +4,17 @@
 ![PyQt6](https://img.shields.io/badge/PyQt6-v6.6%2B-green)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 
-A lightweight, modern, semi-transparent HUD overlay & battle monitor for **Task Bar Hero** (Unity IL2CPP game). Built with Python & PyQt6, providing real-time combat stats, DPS tracking, stage detection, battle logs, and Windows native Toast notifications for chest drops.
+A lightweight, modern, glassmorphic HUD overlay & battle monitor for **Task Bar Hero** (Unity IL2CPP game). Built with Python & PyQt6, providing real-time combat stats, DPS tracking, stage detection, battle logs, and Windows native Toast notifications for chest drops.
 
 Developed by [whiziy](https://github.com/whiziy).
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="assets/preview.png" alt="TBH Monitor Preview" width="380" />
+</p>
 
 ---
 
