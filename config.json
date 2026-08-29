@@ -1,0 +1,26 @@
+{
+  "process_candidates": [
+    "TaskBarHero.exe",
+    "Task Bar Hero.exe",
+    "TBH.exe",
+    "TaskbarHero.exe"
+  ],
+  "poll_interval_sec": 2.0,
+  "reader_tick_sec": 0.25,
+  "window": {
+    "start_x": 40,
+    "start_y": 40,
+    "opacity": 0.90,
+    "always_on_top": true,
+    "click_through": false
+  },
+  "chest_detect": {
+    "blue": true,
+    "gold": true,
+    "other": true
+  },
+  "native_reader_mode": true,
+  "live_json_mode": false,
+  "live_json_path": null,
+  "demo_mode": false
+}

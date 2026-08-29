@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+*.manifest
+*.spec.log
+
+# PyInstaller / Build
+dist/
+build/
+
+# Application data & local settings
+battle_history.json
+resolve_cache.json
+meter.log
+reader-diag.log
+live.json
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
