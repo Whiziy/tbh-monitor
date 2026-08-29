@@ -48,6 +48,10 @@ class App:
         self._live_json_mode = config.get("live_json_mode", False)
         self._native_mode = config.get("native_reader_mode", False)
 
+        from core.discord_rpc import DiscordRPCManager
+        self.discord_rpc = DiscordRPCManager()
+        self.discord_rpc.connect()
+
         self._signals = _Signals()
         self._signals.game_found.connect(self._on_game_found)
         self._signals.game_lost.connect(self._on_game_lost)
@@ -170,6 +174,15 @@ class App:
 
             if self.stats.connected and self.stats.elapsed_sec > 1:
                 self._had_stats = True
+
+        if hasattr(self, "discord_rpc") and self.discord_rpc:
+            self.discord_rpc.update_presence(
+                stage=self.stats.stage,
+                mode=self.stats.mode,
+                gold=self.stats.gold,
+                dps=self.stats.dps,
+                in_game=self.stats.connected,
+            )
 
         if self.stats.chest_detected:
             chest_type = self.stats.chest_detected

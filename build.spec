@@ -10,7 +10,7 @@ a = Analysis(
                    "reader.il2cpp.typeinfo", "reader.il2cpp.finder", "reader.game.models",
                    "reader.game.save", "reader.game.build", "reader.game.obscured",
                    "reader.metrics.dps", "reader.metrics.gold", "reader.metrics.xp",
-                   "reader.config.offsets"],
+                   "reader.config.offsets", "pypresence", "core.discord_rpc"],
     hookspath=[],
     runtime_hooks=[],
     excludes=[],
