@@ -22,7 +22,7 @@ class DiscordRPCManager:
         self._start_ts: Optional[float] = None
         self._enabled = True
 
-    def connect((self) -> bool:
+    def connect(self) -> bool:
         if not self._enabled or self._connected:
             return self._connected
 

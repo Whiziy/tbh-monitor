@@ -48,9 +48,12 @@ class App:
         self._live_json_mode = config.get("live_json_mode", False)
         self._native_mode = config.get("native_reader_mode", False)
 
-        from core.discord_rpc import DiscordRPCManager
-        self.discord_rpc = DiscordRPCManager()
-        self.discord_rpc.connect()
+        try:
+            from core.discord_rpc import DiscordRPCManager
+            self.discord_rpc = DiscordRPCManager()
+            self.discord_rpc.connect()
+        except Exception:
+            self.discord_rpc = None
 
         self._signals = _Signals()
         self._signals.game_found.connect(self._on_game_found)
