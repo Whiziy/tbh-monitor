@@ -13,7 +13,7 @@ Developed by [whiziy](https://github.com/whiziy).
 ## 📸 Preview
 
 <p align="center">
-  <img src="assets/preview.png" alt="TBH Monitor Preview" width="380" />
+  <img src="https://i.top4top.io/p_3893lrw8c1.png" alt="TBH Monitor Preview" width="380" />
 </p>
 
 ---
